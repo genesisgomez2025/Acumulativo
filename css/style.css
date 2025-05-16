@@ -1,0 +1,259 @@
+/* ----- Base Responsive ----- */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* ----- Menú de navegación ----- */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ddd05c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.menu li a:hover {
+  text-shadow: 2px 2px 5px rgba(66, 41, 4, 0.959);
+}
+.menu li a:active {
+  top: 2px;
+}
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.navegacion a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.logo-perfil img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 30%;
+}
+
+/* ----- Sección principal ----- */
+.principal,
+.principal1,
+.principal2,
+.principal4,
+.principal5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #796923;
+  color: white;
+  padding: 60px 5%;
+  gap: 40px;
+}
+
+/* ----- Textos ----- */
+.texto,
+.text {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.texto h1 {
+  font-size: 2.5rem;
+}
+.texto h2 {
+  font-size: 1.2rem;
+}
+.texto p,
+.text p {
+  font-size: 1.1rem;
+}
+
+.text span {
+  font-weight: bold;
+}
+.text .blue {
+  color: lightblue;
+}
+.text .yellow {
+  color: gold;
+}
+
+.justificado {
+  text-align: justify;
+  margin: auto;
+  width: 90%;
+}
+
+/* ----- Imágenes ----- */
+.imagen img,
+.image-section img,
+.imagen-obra img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ----- Tarjetas de datos ----- */
+.datos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tarjeta {
+  background-color: #8c9c65;
+  padding: 15px 20px;
+  border-radius: 15px;
+  min-width: 180px;
+  flex: 1 1 200px;
+}
+
+/* ----- Tablas ----- */
+.tabla,
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.tabla {
+  display: grid;
+  max-width: 100%;
+  row-gap: 1px;
+  background-color: #6d6433;
+}
+
+.fila {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  background-color: #302501;
+  padding: 12px 0;
+}
+.fila div {
+  padding: 8px 12px;
+  border-right: 1px solid #ccc;
+}
+.fila div:last-child {
+  border-right: none;
+}
+.fila.encabezado {
+  background-color: #885a15;
+  font-weight: bold;
+  color: #111;
+  text-transform: uppercase;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #383232;
+}
+tr:hover {
+  background-color: #080808;
+}
+tbody tr:nth-child(even) {
+  background-color: #504101;
+}
+
+/* ----- Formulario ----- */
+#formularioContacto {
+  display: none;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #1a1919;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #080808;
+  border-radius: 4px;
+}
+input[type="submit"],
+button {
+  background-color: #4e4104;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ----- Imagen obra / botones ----- */
+.botones {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.imagen-obra {
+  display: none;
+  text-align: center;
+}
+.volver {
+  display: block;
+  margin: 20px auto;
+  background-color: #36251f;
+}
+
+/* ----- Footer (pie de página) ----- */
+.footer,
+.footer2,
+.footer3 {
+  text-align: center;
+  padding: 40px 20px;
+  background: #ddd05c;
+  color: #080808;
+  font-size: 1rem;
+}
